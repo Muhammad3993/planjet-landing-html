@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlanJet</title>
+  <link rel="shortcut icon" href="./images/mainlogo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./style/index.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "custom_gray": "rgba(254, 254, 254, 0.12)",
+            "custom_gray25": "rgba(254, 254, 254, 0.25)",
+            "custom_gray35": "rgba(254, 254, 254, 0.35)",
+            "custom_white": "rgba(255, 255, 255, 0.5)"
+          },
+          fontSize: {
+            "15": "15px",
+            "17": "17px",
+            "18": "18px",
+            "22": "22px",
+            "32": "32px",
+            "56": "56px",
+            "80": "80px",
+          },
+          fontFamily: {
+            sfpro: ['"SF Pro Display"', "sans-serif"],
+          },
+          lineHeight: {
+            "67": "67px",
+            "96": "96px",
+          },
+          backgroundImage: {
+            "custom-gradient":
+              "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))",
+          },
+          width: {
+            "137": "137px"
+          },
+          height: {
+            "50": "50px",
+            "54": "54px",
+          },
+          borderWidth: {
+            "1": "1px",
+            "3": "3px",
+            "6": "6px"
+          },
+          borderColor: {
+            "custom_gray": "rgba(254, 254, 254, 0.25)",
+            "custom_gray12": "rgba(254, 254, 254, 0.12)"
+          },
+          borderRadius: {
+            "35": "35px",
+            "72": "72px"
+          },
+          boxShadow: {
+            'custom-1': '0px 1px 6px 1px rgba(12, 12, 13, 0.12)',
+            'custom-2': '0px 1px 4px 0px rgba(12, 12, 13, 0.05)',
+            'custom-3': '0px 4px 4px -4px rgba(12, 12, 13, 0.05)',
+          },
+          backdropBlur: {
+            "125": "125px"
+          },
+          screens: {
+            xs: "414px",
+            xsl: "444px",
+          },
+          gap: {
+            "60": "60px"
+          }
+        },
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <nav class="navbar">
+      <div class='containeer h-14 flex items-center justify-between'>
+        <a href='./en.html' class="">
+          <image src='./images/logo.svg' alt='' class='w-[159px] h-[40px] max-md:w-[120px] max-md:h-[30px]' />
+        </a>
+        <div class='flex gap-12 max-md:hidden'>
+          <a href="#about-project" class='text-18 font-medium font-sfpro leading-5 text-white'> About project </a>
+          <a href="#open-source" class='text-18 font-medium font-sfpro leading-5 text-white'> Open-source </a>
+          <a href='#self-hosted' class='text-18 font-medium font-sfpro leading-5 text-white'> Self-hosted </a>
+        </div>
+        <div class='flex items-center justify-center gap-4'>
+          <a href="./ru.html"
+            class="text-18 max-md:text-base font-medium font-sfpro leading-5 text-white cursor-pointer opacity-50"> RU
+          </a>
+          <div class="w-[2px] h-5 bg-white text-white"></div>
+          <a href="./en.html"
+            class="text-18 max-md:text-base font-medium font-sfpro leading-5 text-white cursor-pointer"> EN </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class='containeer'>
+      <div class='flex flex-col gap-10 items-center justify-center py-[180px] max-md:py-[100px]'>
+        <h1 class='text-80 text-white font-sfpro font-bold leading-96 text-center max-md:text-4xl'> Open-Source project
+          management in your Telegram chat </h1>
+        <h4 class='text-xl font-medium leading-6 text-white text-center opacity-[.8]'> Implement a user-friendly tool
+          for scheduling and task management </h4>
+        <button
+          class='bg-custom_gray25 py-4 px-8 w-40 h-54 rounded-2xl border-1 border-custom_gray flex items-center justify-center shadow-custom-1 backdrop-blur-2xl duration-300 transition ease-in-out hover:border-b-3 hover:scale-[1.05] btn'>
+          <p class='text-base font-semibold font-sfpro leading-5 text-white'> Try it </p>
+        </button>
+      </div>
+    </section>
+    <!-- Integration -->
+    <section class='pt-[250px]' id="about-project" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="600">
+      <div class="containeer">
+        <div
+          class='w-full h-[564px] bg-custom_gray rounded-72 border-x-6 border-custom_gray12 backdrop-blur-125 flex items-center justify-center max-md:h-auto max-md:flex-col max-sm:rounded-35 max-md:border-x-3'>
+          <div class='w-[485]'>
+            <image src='./images/intagration.svg' alt=''
+              class="w-[485px] h-[711px] max-sm:w-[295px] max-sm:h-[432px] max-md:mt-[-140px] max-sm:mt-[-90px]" />
+          </div>
+          <div class='w-[60%] flex flex-col gap-8 max-md:w-full max-md:py-8 max-md:px-6 max-md:gap-4 max-md:mt-[-40px]'>
+            <h2 class='text-56 font-semibold font-sfpro leading-67 text-white max-md:text-2xl'> Integration with
+              Telegram groups and supergroups </h2>
+            <div class='flex gap-3 w-[80%] max-md:w-full'>
+              <div>
+                <div class='w-[6px] h-[6px] rounded-full bg-white relative top-[12px]'></div>
+              </div>
+              <h4 class='font-normal text-white text-2xl font-sfpro max-md:text-15 max-md:leading-5'> Easy integration
+                with Telegram groups and supergroups </h4>
+            </div>
+            <div class='flex gap-3 w-[80%] max-md:w-full'>
+              <div>
+                <div class='w-[6px] h-[6px] rounded-full bg-white relative top-[12px]'></div>
+              </div>
+              <h4 class='font-normal text-white text-2xl font-sfpro max-md:text-15 max-md:leading-5'> Manage goals and
+                notifications when task statuses change </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Create -->
+    <section class='containeer' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">
+      <div
+        class='w-full h-[564px] bg-custom_gray mt-40 rounded-72 border-x-6 border-custom_gray12 backdrop-blur-125 flex flex-row-reverse items-center justify-between max-md:h-auto max-md:flex-col max-sm:rounded-35 max-md:border-x-3'>
+        <div class='relative flex justify-end items-end max-md:w-full'>
+          <image src='./images/create.svg' alt=''
+            class="w-[422px] h-[621px] max-sm:w-[295px] max-sm:h-[432px] max-md:mt-[-140px] max-sm:mt-[-90px] relative top-[-35px]"
+            width={422} height={621} />
+          <image src="./images/create1.svg" alt="" width={280} height={142}
+            class="absolute bottom-[26%] left-[-28%] max-md:left-[25%] max-md:bottom-[35%] max-sm:w-[173px] max-xs:left-[20px]" />
+        </div>
+        <div
+          class='w-[70%] pl-20 flex flex-col gap-8 max-md:w-full max-md:py-8 max-md:px-6 max-md:gap-4 max-md:mt-[-40px] max-lg:gap-4'>
+          <h2 class='text-56 font-semibold font-sfpro leading-67 text-white max-md:text-2xl max-lg:text-4xl'> Create
+            tasks in a way that suits you </h2>
+          <div class='flex gap-3 w-[80%] max-md:w-full'>
+            <div>
+              <div class='w-[6px] h-[6px] rounded-full bg-white relative top-[12px]'></div>
+            </div>
+            <h4 class='font-normal text-white text-2xl font-sfpro max-md:text-15 max-md:leading-5'> The ability to
+              create tasks both through the interface of the mini-application and directly in chat with the bot </h4>
+          </div>
+          <div class='flex gap-3 w-[80%]'>
+            <div>
+              <div class='w-[6px] h-[6px] rounded-full bg-white relative top-[12px]'></div>
+            </div>
+            <h4 class='font-normal text-white text-2xl font-sfpro max-md:text-15 max-md:leading-5'> Convenient input
+              format that allows you to quickly set the name, description and deadline of the task. </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Open Source -->
+    <section class='pt-[100px]' id="open-source" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="600">
+      <div class='containeer'>
+        <div class="flex flex-col items-center py-[160px] max-md:py-[130px]">
+          <h1 class='font-sfpro font-semibold text-56 leading-67 text-center text-white max-md:text-4xl'> Open-source
+          </h1>
+          <div class='mt-10 max-md:mt-6'>
+            <h4 class='text-white text-center font-normal text-2xl font-sfpro max-md:text-base'> PlanJet is an open
+              source project. </h4>
+            <h4 class='text-white text-center font-normal text-2xl font-sfpro max-md:text-base'> Available for
+              modification and distribution </h4>
+          </div>
+          <button
+            class='bg-custom_gray25 py-4 px-8 w-40 h-54 rounded-2xl border-1 border-b-3 border-custom_gray mt-8 flex items-center justify-center shadow-custom-1 backdrop-blur-2xl select-none gap-1 max-md:h-50 max-md:w-max hover:bg-white duration-300 transition ease-in-out git-btn btn'>
+            <p class='text-base font-semibold font-sfpro leading-5 text-white'> Git Hub </p>
+            <image src='./images/git.svg' alt='' width={26} height={26} class='relative top-[-1px] image-git' />
+            <image src='./images/git1.svg' alt='' width={26} height={26} class='relative top-[-1px] image-git1' />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Self Hosted -->
+    <section class='pt-[200px]' id="self-hosted" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="600">
+      <div class="containeer">
+        <h1 class='font-sfpro font-semibold text-56 leading-67 text-center text-white max-md:text-4xl'> Self-hosted
+        </h1>
+        <h4 class='text-white text-center text-2xl font-sfpro font-normal mt-4 max-md:text-xl'> Data security and
+          privacy </h4>
+        <div class='flex flex-wrap gap-6 mt-28 max-md:mt-10'>
+          <div
+            class='p-6 bg-custom_gray rounded-35 border-y-1 border-x-4 border-custom_gray12 shadow-custom-2 backdrop-blur-125 flex-1 min-w-[406px] max-xsl:min-w-[300px]'>
+            <div class='flex gap-4'>
+              <div>
+                <div
+                  class='w-10 h-10 flex items-center justify-center bg-custom_gray35 rounded-xl border-2 border-custom_gray12 relative top-[4px] max-md:w-7 max-md:h-7 max-md:rounded-lg max-md:top-[3px]'>
+                  <image src='./images/coin.svg' alt='' width={24} height={24} class="max-md:w-4 max-md:h-4" />
+                </div>
+              </div>
+              <h3 class='font-sfpro text-32 font-semibold text-white max-md:text-22'> Data control </h3>
+            </div>
+            <h4 class='text-17 font-sfpro text-white font-normal mt-3 max-md:text-15'> High privacy of your data. Manage
+              and store your data on your own servers </h4>
+          </div>
+          <div
+            class='p-6 bg-custom_gray rounded-35 border-y-1 border-x-4 border-custom_gray12 shadow-custom-2 backdrop-blur-125 flex-1 min-w-[406px] max-xsl:min-w-[300px]'>
+            <div class='flex gap-4'>
+              <div>
+                <div
+                  class='w-10 h-10 flex items-center justify-center bg-custom_gray35 rounded-xl border-2 border-custom_gray12 relative top-[4px] max-md:w-7 max-md:h-7 max-md:rounded-lg max-md:top-[3px]'>
+                  <image src='./images/code.svg' alt='' width={24} height={24} class="max-md:w-4 max-md:h-4" />
+                </div>
+              </div>
+              <h3 class='font-sfpro text-32 font-semibold text-white max-md:text-22'> Customizability </h3>
+            </div>
+            <h4 class='text-17 font-sfpro text-white font-normal mt-3 max-md:text-15'> Ability to modify code and
+              functionality to meet your specific requirements </h4>
+          </div>
+          <div
+            class='p-6 bg-custom_gray rounded-35 border-y-1 border-x-4 border-custom_gray12 shadow-custom-2 backdrop-blur-125 flex-1 min-w-[406px] max-xsl:min-w-[300px]'>
+            <div class='flex gap-4'>
+              <div>
+                <div
+                  class='w-10 h-10 flex items-center justify-center bg-custom_gray35 rounded-xl border-2 border-custom_gray12 relative top-[4px] max-md:w-7 max-md:h-7 max-md:rounded-lg max-md:top-[3px]'>
+                  <image src='./images/cube.svg' alt='' width={24} height={24} class="max-md:w-4 max-md:h-4" />
+                </div>
+              </div>
+              <h3 class='font-sfpro text-32 font-semibold text-white max-md:text-22'> Independence </h3>
+            </div>
+            <h4 class='text-17 font-sfpro text-white font-normal mt-3 max-md:text-15'> There is no risk of service
+              disconnection. </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Manage -->
+    <section class='container-manage overflow-hidden' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+      data-aos-duration="600">
+      <div
+        class='w-full h-[564px] bg-custom_gray mt-40 rounded-72 border-x-6 border-custom_gray12 backdrop-blur-125 flex flex-row-reverse items-center justify-between max-md:h-auto max-md:flex-col-reverse max-sm:rounded-35 max-md:pt-12 max-md:pb-0 max-xs:rounded-none max-md:border-x-3'>
+        <div class='h-max relative max-md:flex max-md:justify-end max-md:items-end max-md:w-full max-md:mt-10'>
+          <image src='./images/manage.svg' alt=''
+            class='w-[422px] h-[621px] max-sm:w-[295px] max-sm:h-[432px] relative top-[-35px] max-xs:hidden' width={422}
+            height={621} />
+          <image src='./images/managemedia.svg' alt=''
+            class='w-[422px] h-[621px] max-sm:w-[230px] max-sm:h-[393px] top-[-35px] relative right-[-30px] hidden max-xs:flex'
+            width={422} height={621} />
+          <image src='./images/manage1.svg' alt='' width={358} height={142}
+            class='absolute bottom-[11%] left-[-52%] max-md:left-[12%] max-md:bottom-[26%] max-sm:w-[213px] max-xs:left-[16px] z-10' />
+          <image src='./images/manage2.svg' alt='' width={320} height={124}
+            class='absolute bottom-[27%] left-[-35%] max-md:left-[25%] max-md:bottom-[35%] max-sm:w-[190px] max-xs:left-[60px] z-0' />
+        </div>
+        <div
+          class='w-[70%] pl-20 flex flex-col gap-8 max-md:w-full max-md:py-8 max-md:px-6 max-md:gap-4 max-md:mt-[-40px] max-lg:gap-4'>
+          <h2
+            class='text-56 font-semibold font-sfpro leading-67 text-white max-md:text-2xl max-md:leading-6 max-lg:text-4xl'>
+            Manage tasks efficiently with PlanJet </h2>
+          <h4 class='font-normal text-white text-2xl font-sfpro max-md:text-15 max-md:leading-5 w-[55%] max-md:w-full'>
+            Contact us to quickly implement the tool in your team </h4>
+          <button
+            class='border-1 border-custom_gray bg-custom_gray25 w-[160px] h-[54px] rounded-2xl backdrop-blur-[50px] shadow-custom-3 flex items-center justify-center cursor-pointer mt-7 duration-300 transition ease-in-out hover:border-b-3 hover:scale-[1.05] btn'>
+            <p class="text-white font-semibold text-base font-sfpro">Contact</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class='containeer'>
+      <div class='mt-[130px] max-md:mt-[100px] flex flex-col max-md:gap-60'>
+        <div class='flex justify-between items-center flex-wrap gap-2 max-md:flex-col max-md:items-start'>
+          <a href='/'>
+            <image src='./images/logo.svg' alt='' class='w-[159px] h-[40px] max-md:w-[120px] max-md:h-[30px]'
+              width={159} height={40} />
+          </a>
+          <div class='flex gap-7 max-md:flex-col my-7'>
+            <a href='' class='font-medium text-17 font-sfpro text-white '> Support </a>
+            <a href='' class='font-medium text-17 font-sfpro text-white '> Terms of use </a>
+            <a href='' class='font-medium text-17 font-sfpro text-white '> Privacy and cookie policy </a>
+            <a href='' class='font-medium text-17 font-sfpro text-white '> Payment policy </a>
+          </div>
+          <div class='flex gap-9'>
+            <a href='' class="hover:rotate-[360deg] duration-300 overflow-hidden">
+              <image src='./images/telegram.svg' alt='' width={32} height={32} />
+            </a>
+            <a href='' class="hover:rotate-[360deg] duration-300 overflow-hidden">
+              <image src='./images/instagram.svg' alt='' width={32} height={32} />
+            </a>
+            <a href='' class="hover:rotate-[360deg] duration-300 overflow-hidden">
+              <image src='./images/linkedin.svg' alt='' width={32} height={32} />
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-between mt-4 max-md:flex-col-reverse max-md:gap-4">
+          <h5 class="text-17 text-custom_white opacity-50 font-sfpro font-medium max-md:text-xs">2024 © Dedicated.agency
+            2023. All Rights Reserved</h5>
+          <h5 class="text-17 text-custom_white opacity-50 font-sfpro font-medium max-md:text-15">Product by
+            dedicated.agency</h5>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script>
+    AOS.init();
+
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        nav.classList.add('sticky');
+      } else {
+        nav.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+
+</html>
